@@ -67,7 +67,7 @@
       var ws;
       function setConnected(connected) {
         $("#connect").prop("disabled", connected);
-        $("#disconnected").prop("disabled", !connected);
+        $("#disconnect").prop("disabled", !connected);
         if (connected) {
           $("#sendmessage").show();
         } else {

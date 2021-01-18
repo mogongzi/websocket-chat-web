@@ -20,12 +20,14 @@ public class MyTextWebSocketHandler extends TextWebSocketHandler {
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
         sessions.add(session);
+        LOGGER.info("WebSocket session established.");
         super.afterConnectionEstablished(session);
     }
 
     @Override
     public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
         sessions.remove(session);
+        LOGGER.info("WebSocket session destroyed.");
         super.afterConnectionClosed(session, status);
     }
 
