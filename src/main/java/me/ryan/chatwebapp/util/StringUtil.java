@@ -3,7 +3,7 @@ package me.ryan.chatwebapp.util;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class StringUtils {
+public class StringUtil {
 
     private static final String TIME_FORMATTER = "HH:mm:ss";
 

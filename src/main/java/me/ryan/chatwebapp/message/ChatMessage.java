@@ -2,7 +2,7 @@ package me.ryan.chatwebapp.message;
 
 import lombok.Getter;
 import lombok.Setter;
-import me.ryan.chatwebapp.util.StringUtils;
+import me.ryan.chatwebapp.util.StringUtil;
 
 @Getter
 @Setter
@@ -19,6 +19,6 @@ public class ChatMessage {
         this.from = from;
         this.text = text;
         this.recipient = recipient;
-        this.time = StringUtils.getCurrentTimeStamp();
+        this.time = StringUtil.getCurrentTimeStamp();
     }
 }

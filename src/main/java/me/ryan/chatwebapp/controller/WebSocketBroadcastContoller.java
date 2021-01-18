@@ -7,12 +7,18 @@ import org.slf4j.LoggerFactory;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class WebSocketBroadcastContoller {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(WebSocketBroadcastContoller.class);
+
+    @GetMapping("/sockjs-broadcast")
+    public String  getWebSocketWithSockJsBroadcast() {
+        return "sockjs-broadcast";
+    }
 
     @RequestMapping("/stomp-broadcast")
     public String getWebSocketBroadcast() {
