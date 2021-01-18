@@ -1,4 +1,4 @@
-package me.ryan.chatwebapp;
+package me.ryan.chatwebapp.handler;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
