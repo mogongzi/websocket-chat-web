@@ -1,6 +1,5 @@
 package me.ryan.chatwebapp.controller;
 
-import me.ryan.chatwebapp.handler.MyTextWebSocketHandler;
 import me.ryan.chatwebapp.message.ChatMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
